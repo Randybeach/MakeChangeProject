@@ -2,3 +2,10 @@
 
 ## Week 1 Homework Project for Skill Distillery
 
+### Overview 
+
+ToDo: Project description, with instructions how to run it
+
+### Technologies Used
+
+### Lessons Learned, Insights Gained
