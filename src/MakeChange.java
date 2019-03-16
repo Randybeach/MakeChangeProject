@@ -6,7 +6,7 @@ public class MakeChange {
 
 	public static void main(String[] args) throws Exception {
 		boolean keepShopping = true;
-		System.out.println("Welcome to Billy's Bait and Tackle.\nTake a look around\n");
+		System.out.println("Welcome to Billy's Bait and Tackle.\nY'all take a look around\n");
 		pause();
 		System.out.println("Well that was fast. You must be a regular.");
 
@@ -82,7 +82,7 @@ public class MakeChange {
 		while (price > moneyGiven) {
 			double difference = price - moneyGiven;
 			System.out.println("That isn't enought money.\nYou still owe $"
-					+ String.format("%.2f", difference) + " more.\n Do you have any more to add? Yes or No");
+					+ String.format("%.2f", difference) + " more.\nDo you have any more to add? Yes or No");
 
 			String answer = scan.next();
 			if (answer.equalsIgnoreCase("no")) {
@@ -110,19 +110,21 @@ public class MakeChange {
 			changeNeeded -= 20;
 			count20++;
 		}
-
 		if (count20 > 0)
 			System.out.print(count20 + " twenties, ");
 			pause();
+			
+			
 		int count10 = 0;
 		while (changeNeeded > 10) {
 			changeNeeded -= 10;
 			count10++;
 		}
-
 		if (count10 > 0)
 			System.out.print(count10 + " tens, ");
 			pause();
+			
+			
 		int count5 = 0;
 		while (changeNeeded > 5) {
 			changeNeeded -= 5;
@@ -131,6 +133,8 @@ public class MakeChange {
 		if (count5 > 0)
 			System.out.print(count5 + " fives, ");
 			pause();
+			
+			
 		int count1 = 0;
 		while (changeNeeded > 1) {
 			changeNeeded -= 1;
@@ -139,6 +143,8 @@ public class MakeChange {
 		if (count1 > 0)
 			System.out.print(count1 + " ones, ");
 			pause();
+			
+			
 		int count_25 = 0;
 		while (changeNeeded > .25) {
 			changeNeeded -= .25;
@@ -147,6 +153,8 @@ public class MakeChange {
 		if (count_25 > 0)
 			System.out.print(count_25 + " quarters, ");
 			pause();
+			
+			
 		int count_10 = 0;
 		while (changeNeeded > .10) {
 			changeNeeded -= .10;
@@ -155,6 +163,8 @@ public class MakeChange {
 		if (count_10 > 0)
 			System.out.print(count_10 + " dimes, ");
 			pause();
+			
+			
 		int count_5 = 0;
 		while (changeNeeded > .05) {
 			changeNeeded -= .05;
@@ -163,8 +173,10 @@ public class MakeChange {
 		if (count_5 > 0)
 			System.out.print(count_5 + " nickles, ");
 			pause();
+			
+			
 		int count_1 = 0;
-		while (changeNeeded > .01) {
+		while (changeNeeded > .00) {
 			changeNeeded -= .01;
 			count_1++;
 		}
@@ -177,6 +189,7 @@ public class MakeChange {
 	}
 	
 	public static void pause()throws Exception{
+		//added a short pause for conversational realism
 		Thread.sleep(1000);
 	}
 
