@@ -6,7 +6,8 @@ public class MakeChange {
 
 	public static void main(String[] args) throws Exception {
 		boolean keepShopping = true;
-		System.out.println("Welcome to Billy's Bait and Tackle.\nY'all take a look around\n");
+		System.out.println("Welcome to Billy's Bait and Tackle.\nY'all take a look around\nRemember we are cash only!\n");
+		pause();
 		pause();
 		System.out.println("Well that was fast. You must be a regular.");
 
